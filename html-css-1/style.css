@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Nav-Section {
+    background-color: grey;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0vh;
+}
+
+.company-name {
+    color: white;
+    margin-left: 4vw;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0vh;
+    font-size: large;
+}
+
+.right-nav-bar {
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-small;
+    color:white;
+    margin-bottom: 0vh;
+}
+
+.Know {
+    height: 27vh;
+    background-color: black;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #F7E86A;
+    font-family: 'Oswald', sans-serif;
+    font-size: 280%;
+    font-style: bold;
+}
+
+.Squares {
+    display: flex;
+    height: 21vh;
+    border: black;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.square {
+    width: 23vw;
+    height: 18vh;
+    background-color: #98FDD6;
+    border-radius: 10px;
+}
+
+.Rectangles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 20vh;
+}
+
+.rectangle {
+    width: 40vw;
+    height: 17vh;
+    background-color: #F8C471;
+}
+
+.Paragraph-Pic  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 18vh;
+}
+
+.paragraph {
+    height: 10vh;
+    width: 36.5vw;
+}
+
+p {
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 26vw;
+    height: 12vh;
+}
+
+.Footer {
+    height: 9vh;
+    background-color: #3C3951;
+}

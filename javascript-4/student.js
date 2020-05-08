@@ -27,7 +27,7 @@ const me = {
     homeTown: 'Crowley, TX',
     superPowers: ['Frost Resistance', 'Mega Mulch', 'Blooming Bloomers'],
     superPowerXP: function () {
-        Math.floor(Math.random() * 100) + 1
+        return Math.floor(Math.random() * 100) + 1
     },
     profileImage: function () {
         return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`

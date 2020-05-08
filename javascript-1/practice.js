@@ -64,7 +64,7 @@ const iLove = (name, love) => {
 // Create a copy of the faveColors array called 'colorCopy' using slice.
 const faveColors = ['red', 'green', 'black']
 
-const colorCopy = faveColors.slice (0, faveColors.length -1)
+const colorCopy = faveColors.slice (0, 3)
 
 //////////////////PROBLEM 9////////////////////
 
@@ -148,13 +148,16 @@ const total = myNumbers.reduce((acc, e) => acc + e)
 
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
-const myNumbersIndex = (myNumbers) => {
-	for (i = 0; i < myNumbers.length; i++) {
-		myNumbersIndex.push (i)
-	}
-}
+// const myNumbersIndex = (myNumbers) => {
+// 	for (i = 0; i < myNumbers.length; i++) {
+// 		myNumbersIndex.push (i)
+// 	}
+// }
 
-// const myNumbersIndex = myNumbers.forEach((e, i) => myNumbersIndex.push(myNumbers[i])
+const myNumbersIndex = []
+myNumbers.forEach((e, i) => {
+	myNumbersIndex.push(i)
+})
 
 //////////////////PROBLEM 18////////////////////
 
@@ -175,9 +178,10 @@ const people = [
 	{ name: 'Josh', friend: true, awesomeLevel: 7 }
 ]
 
-const enemies = people.filter(function (e) {
-	if (e === false) {
-		enemies.push ()
+const enemies = []
+people.filter(e => {
+	if (e.friend === false) {
+		enemies.push(e)
 	}
 })
 
@@ -185,4 +189,4 @@ const enemies = people.filter(function (e) {
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
-const totallyAwesome = people.reduce((acc, e) => acc + e)
+const totallyAwesome = people.reduce((acc, e) => acc + e.awesomeLevel, 0)

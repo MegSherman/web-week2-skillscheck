@@ -31,7 +31,7 @@ const addItem = (item) => {
 
 const removeItem = (index) => {
     for (let i = 0; i < groceries.length; i++) {
-        if (index === i) {
+        if (index == i) {
             groceries.splice (i, 1)
         }
     }
